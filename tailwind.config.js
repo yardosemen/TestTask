@@ -1,6 +1,5 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-   content: [
+  content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
@@ -8,6 +7,11 @@ module.exports = {
       'sm': {'min': '280px', 'max': '450px'},
     },
   },
+  variants: {
+    extend: {
+      backgroundColor: ['hover'],
+      textColor: ['hover'],
+    }
+  },
   plugins: [],
 }
-

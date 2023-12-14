@@ -1,22 +1,17 @@
 import Registaration from './template/Registaration';
 import Cards from './template/Cards';
 
-import Gauben_B from "./../assets/Gauben_B.svg"; 
-import keine_Gauben_B from "./../assets/keine_Gauben_B.svg";
-import Anderes from "./../assets/Anderes.svg"; 
-import Pultdach from "./../assets/Pultdach.svg"; 
-import Flachdach from "./../assets/Flachdach.svg";
-import Satteldach from "./../assets/Satteldach.svg";
+import svgIcons from './svgImports'
 
 export default [
     {
         template: <Cards />,
         title: "Welche Dachform hat Ihraus?",
         items: [
-            { name: 'Satteldach', icon: Satteldach },
-            { name: 'Flachdach', icon: Flachdach },
-            { name: 'Pultdach', icon: Pultdach },
-            { name: 'Anderes', icon: Anderes },
+           { name: 'Satteldach', icon: svgIcons.Satteldach },
+            { name: 'Flachdach', icon: svgIcons.Flachdach },
+            { name: 'Pultdach', icon: svgIcons.Pultdach },
+            { name: 'Anderes', icon: svgIcons.Anderes },
         ],
         name: 'dachform'
     },
@@ -24,9 +19,9 @@ export default [
          template: <Cards />,
          title: "Besitzt Ihr Haus Gauben oder Dachfenster?",
       items: [
-        { name: 'Ja', icon: Gauben_B },
-        { name: 'Nein', icon: keine_Gauben_B },
-        { name: 'Weiß nicht', icon: Anderes },
+        { name: 'Ja', icon: svgIcons.Gauben_B },
+            { name: 'Nein', icon: svgIcons.keine_Gauben_B },
+            { name: 'Weiß nicht', icon: svgIcons.Anderes },
          ],
       name: 'dachfenster'
     },
